@@ -39,5 +39,13 @@ async def Pomocy(ctx):
   await ctx.send('Voteban <nazwa użytkownika>')
   await ctx.send('mokotów')
 
+@client.event
+async def on_message(message):
+  if message.author == client.user:
+    return
+  
+  if message.content.startswith('Będę spamił ile chce'):
+    await message.channel.send('Osa przestań spamić kurwo')
+
 keep_alive()
 client.run(os.getenv('TOKEN'))
