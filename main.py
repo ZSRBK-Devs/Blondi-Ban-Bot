@@ -31,5 +31,13 @@ async def mokotów(ctx):
 async def mute(ctx):
   await ctx.send('No odmutujcie mnie no')
 
+@client.command()
+async def Pomocy(ctx):
+  await ctx.send('mute')
+  await ctx.send('golf')
+  await ctx.send('rajdówki')
+  await ctx.send('Voteban')
+  await ctx.send('mokotów')
+
 keep_alive()
 client.run(os.getenv('TOKEN'))
