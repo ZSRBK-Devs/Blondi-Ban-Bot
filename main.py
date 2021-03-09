@@ -13,7 +13,7 @@ async def on_ready():
 @commands.has_permissions(ban_members=True)
 async def Voteban(ctx, member: discord.Member):
     await member.ban()
-    await ctx.send('Blondi Zbanowany XDDD!!')
+    await ctx.send(f'{member} ZBANOWANY XDDD!!!')
 
 @client.command()
 async def rajdówki(ctx):
@@ -22,6 +22,14 @@ async def rajdówki(ctx):
 @client.command()
 async def golf(ctx):
   await ctx.send('Ej chłopaki golfa kupiłem')
+
+@client.command()
+async def mokotów(ctx):
+  await ctx.send('Ej chłopaki mokotów, mokotów mnie goni')
+
+@client.command()
+async def mute(ctx):
+  await ctx.send('No odmutujcie mnie no')
 
 keep_alive()
 client.run(os.getenv('TOKEN'))
