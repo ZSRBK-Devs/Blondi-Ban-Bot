@@ -36,7 +36,7 @@ async def Pomocy(ctx):
   await ctx.send('mute')
   await ctx.send('golf')
   await ctx.send('rajdówki')
-  await ctx.send('Voteban')
+  await ctx.send('Voteban <nazwa użytkownika>')
   await ctx.send('mokotów')
 
 keep_alive()
