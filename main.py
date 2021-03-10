@@ -33,11 +33,7 @@ async def mute(ctx):
 
 @client.command()
 async def Pomocy(ctx):
-  await ctx.send('mute')
-  await ctx.send('golf')
-  await ctx.send('rajdówki')
-  await ctx.send('Voteban <nazwa użytkownika>')
-  await ctx.send('mokotów')
+  await ctx.send('Zbiór komend\n- Voteban <nazwa użytkownika>\n- mute\n- golf\n- rajdówki\n- mokotów')
 
 @client.event
 async def on_message(message):
